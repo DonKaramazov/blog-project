@@ -1,3 +1,116 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/* Main Parts */
+
+body {
+  background-size: cover;
+  font-family: 'Trebuchet MS',Arial,sans-serif;
+  color: #181818;
+}
+
+#container {
+  width: 1000px;
+  margin:auto;
+}
+
+#titre_principal {
+  display: inline-block;
+}
+
+header  {
+  h1 {
+    font-size: 2.5em;
+    font-weight: normal;
+  }
+  h2 {
+    font-size: 1.1em;
+    margin-top:0px;
+    font-weight: normal;
+  }
+}
+
+#Logo, header h1 {
+  display: inline-block;
+  margin-bottom: 0px;
+}
+
+/* Navigation */
+
+nav {
+  display: inline-block;
+  width: 740px;
+  text-align: right;
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+
+  a {
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #760001;
+    border-bottom: 3px solid #760001;
+  }
+}
+
+a {
+  color:#000000;
+}
+
+/* Corps */
+
+.post {
+  box-shadow: 0px 0px 10px 5px  grey ;
+  width: 300px;
+  padding:5px 15px 5px 5px;
+  margin-bottom: 20px;
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .posted_at {
+    color: dodgerblue;
+    font-style: italic;
+  }
+}
+
+
+/* creation d'un post */
+
+.new_post {
+  form {
+    width: 400px;
+  }
+  .field {
+    width: 200px;
+    margin-bottom:10px;
+  }
+
+  input , textarea {
+    padding: 10px;
+    font-size: 16px;
+    outline:none;
+    border:1px solid #CCCCCC;
+  }
+
+  input:focus {
+    box-shadow: 0 0 5px #43D1AF;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #56baa6;
+  }
+}

@@ -2,12 +2,15 @@
 
 <h1>Bienvenue sur mon blog!</h1>
 
-<% @posts.each do |post|%>
-    <h2><%= link_to post.title, post %></h2>
-    <p><%= time_ago_in_words post.created_at %> ago</p>
-    <p><%= truncate post.content %></p>
 
+<% @posts.each do |post|%>
+    <div class="post">
+      <h2><%= link_to post.title, post %></h2>
+      <p class="posted_at"><%= time_ago_in_words post.created_at %> ago</p>
+      <p><%= truncate post.content %></p>
+    </div>
 <% end %>
+
 
 
 <%= link_to 'New Post', new_post_path %>
