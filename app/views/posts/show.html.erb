@@ -7,12 +7,12 @@
 <% @post.comments.each do |comment| %>
     <p><%= comment.content %></p>
     <p><%= time_ago_in_words comment.created_at  %> ago</p>
-    <p><%= link_to 'Supprimer commentaire', @post , method: :delete %></p>
+    <p><%= link_to 'Supprimer commentaire', [@post,comment] , method: :delete %></p>
 <% end %>
 
 <%= form_for [@post, @post.comments.build] do |f| %>
     <p><%= f.text_area :content, :size => '40x10' %></p>
-    <p><%= f.submit "Rediger" %></p>
+    <p><%= f.submit "Valider" %></p>
 <% end %>
 
 
