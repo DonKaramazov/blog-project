@@ -114,3 +114,99 @@ a {
     border: 1px solid #56baa6;
   }
 }
+
+.menu_post {
+  margin-bottom: 60px;
+}
+
+
+/* Commentaires */
+
+
+
+.new_comment {
+  display: none;
+}
+
+.btn {
+  background-color: #008CBA;
+  border:none;
+  color:white;
+  padding:15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.btn:hover {
+  box-shadow: 0 0 10px #008CBA;
+  color:#999999;
+}
+
+
+/* LOGIN */
+
+.auth_form {
+  width: 100%;
+}
+
+.login form input.btn:hover {
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+  transition: background 0.5s, color 0.5s;
+}
+
+.login form input {
+  background-color: rgba(255,255,255,0.5);
+  border: none;
+  border-bottom: 4px solid #000;
+  font-size: 16px;
+  margin: 10px 30px 0;
+  padding:30px;
+  transition: border-bottom 0.5s;
+  width: calc(100% - 120px);
+}
+
+.login form input:focus {
+  border:none;
+  border-bottom: 4px solid #ed145b;
+  box-shadow: 0 0;
+  transition: border-bottom 0.5s;
+  outline: none;
+}
+
+.login form input.btn {
+  background-color: #fff;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  height: 80px;
+  line-height: 80px;
+  margin: 10px 0 0;
+  padding: 0;
+  transition: background 0.5s, color 0.5s;
+  width: 100%;
+}
+
+
+.login {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.login form input {
+  width: 280px;
+}
+
+.login form input.form-btn, .signup form input.form-btn {
+  margin-left: 30px;
+  width: 340px;
+  transition: background 0.5s, color 0.5s;
+}
+
+
+
+
+

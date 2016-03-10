@@ -7,9 +7,17 @@
 
      <nav>
        <ul>
-         <li><a href="posts#index">Accueil</a></li>
+         <li><%= link_to 'Accueil', posts_path %></li>
          <li><a href="#">Contact</a></li>
-         <li><a href="#">Sign in</a> </li>
+         <% if current_user %>
+         <li><%= current_user.pseudo %></li>
+             <li><%= link_to "Deconnexion", logout_path, method: "delete" %></li>
+         <% else %>
+             <li><%= link_to "Se connecter", login_path %></a></li>
+             <li><%= link_to "S'inscrire", signup_path %></a></li>
+         <% end %>
+
        </ul>
      </nav>
    </header>
+
